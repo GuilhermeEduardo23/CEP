@@ -1,0 +1,128 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#146C94, #19A7CE, #AFD3E2, #F6F1F1);
+}
+
+.box {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box .title {
+    font-size: 90px;
+    animation: tracking-in-contract;
+}
+
+.box .containerInput {
+    background-color: rgb(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 10px;
+}
+
+.containerInput input::placeholder {
+    color: #f1f1f1;
+}
+
+.buttonSearch {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover {
+    transform: scale(1.2);
+}
+
+.box .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f303f;
+    color: #fff;
+    width: 500px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 620px) {
+    .box .title {
+        font-size: 60px;
+    }
+
+    .box .main h2 {
+        font-size: 28px;
+    }
+
+    .box .main {
+        width: 80%;
+        min-height: 250px;
+    }
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+}
